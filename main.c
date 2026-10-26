@@ -63,7 +63,7 @@ int main(int argc, char **argv)
       snprintf(cmd, sizeof(cmd), "tmux set-option -g status-right \"\U0001F345 %d\"", countdown);
       system(cmd);
       countdown -= 1;
-      sleep(1);
+      sleep(60);
     }
 
     system("tmux set-option -g status-right \"\"");
